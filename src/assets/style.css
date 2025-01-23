@@ -1,0 +1,105 @@
+:root {
+    --main-bg-color: #1d0642;
+    --navbar-custom-background: #320875;
+    --navbar-accent: #3a9ab7;
+    --navbar-text: #3a9ab7;
+    --navbar-text-hover: #4cc9F0;
+    --body-header-text: #F72585;
+    --body-text:#4895EF;
+    --body-text-darkening: rgba(0, 0, 0, 0.6);
+}
+
+/* Nav Related Stuff */
+
+.nav-link{
+    color: var(--navbar-text)
+}
+.nav-link:hover{
+    color: var(--navbar-text-hover)
+}
+
+.navbar-custom{
+    background-color: var(--navbar-custom-background);
+}
+
+.border-bottom-custom {
+    border-bottom: 1px solid var(--navbar-accent)
+}
+
+.raleway-nav {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--navbar-accent);
+}
+#home-icon {
+    color: var(--navbar-text);
+}
+#home-icon:hover {
+    color: var(--navbar-text-hover);
+}
+.doto-carousel {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+
+/* body related stuff */
+
+.lora-header {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--body-header-text)
+}
+
+.raleway-body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--navbar-accent);
+  }
+body {
+    background-color: var(--main-bg-color)
+}
+
+.icon{
+    color: var(--navbar-text)
+
+}
+.icon:hover{
+   color: var(--navbar-text-hover)
+}
+
+#social-links {
+    list-style-type: none;
+    
+}
+#social-links a {
+    color: #c31ba9;
+}
+#social-links a:hover{
+    color:#ff25de;
+}
+
+/* body p {
+    color: var(--body-text)
+} */
+
+.body-main {
+    background-color: var(--body-text-darkening);
+}
+#headshot {
+    height: 75%;
+    border-radius: 50%;
+}
+.projects-screenshot{
+    width: 100%;
+    height: 100%;
+}
