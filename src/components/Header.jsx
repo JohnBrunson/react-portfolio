@@ -26,7 +26,7 @@ export default function Nav() {
                                 <Link className="nav-link" to="/Resume">Resume</Link>
                             </li>
                             <li className="nav-item px-2 raleway-nav">
-                                <Link className="nav-link" to="/Blog">Blog</Link>
+                                <Link className="nav-link" to="/Contact">Contact</Link>
                             </li>
                         </ul>
                     </div>
