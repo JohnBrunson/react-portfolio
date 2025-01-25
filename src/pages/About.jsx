@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faSquareGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function About() {
     return (
@@ -8,25 +9,28 @@ export default function About() {
                 <div className="container col-md-4 body-main pt-5">
                     <img className="p-5-md" src="/assets/img/john-brunson-headshot.jpg" alt="A Picture of John Brunson" id="headshot" />
                     <div className="d-grid gap-2 col-6 mx-auto">
-                        <button type="button" className="btn btn-outline-primary">Contact Me!</button>
+                        <Link to="/Contact">
+                            <button type="button" className="btn btn-outline-primary">Contact Me!</button>
+                        </Link>
+
                     </div>
                 </div>
                 <div className="container col-md-8 body-main pt-5" id="brand-statement">
                     <h1 className="lora-header">Hi! Welcome to my portfolio!</h1>
                     <ul id="social-links">
                         <li className="p-3">
-                            <a href="https://github.com/JohnBrunson/">
+                            <a href="https://github.com/JohnBrunson/" target="_blank">
                                 <FontAwesomeIcon icon={faSquareGithub} className="icon fa-2x fa-fw" />Github
                             </a>
                         </li>
                         <li className="p-3">
-                            <a href="https://www.linkedin.com/in/john-brunson">
+                            <a href="https://www.linkedin.com/in/john-brunson" target="_blank">
                                 <FontAwesomeIcon icon={faLinkedin} className="icon fa-2x fa-fw" />LinkedIn
                             </a>
                         </li>
                         <li className="p-3">
-                            <a href="https://www.twitter.com">
-                                <FontAwesomeIcon icon={faTwitter} className="icon fa-2x fa-fw" />X (Formerly Twitter)
+                            <a href="https://bsky.app/profile/sleepyprogrammer.bsky.social" target="_blank">
+                                <FontAwesomeIcon icon={faBluesky} className="icon fa-2x fa-fw" />Bluesky
                             </a>
                         </li>
                     </ul>

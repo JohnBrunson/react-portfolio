@@ -1,7 +1,9 @@
 :root {
     --main-bg-color: #1d0642;
     --navbar-custom-background: #320875;
+    --footer-custom-background: #320875;
     --navbar-accent: #3a9ab7;
+    --footer-accent: #3a9ab7;
     --navbar-text: #3a9ab7;
     --navbar-text-hover: #4cc9F0;
     --body-header-text: #F72585;
@@ -105,4 +107,10 @@ body {
 }
 .form-control::placeholder {
     color: #ccc;
+}
+.footer-custom-background {
+    background-color: var(--footer-custom-background);
+}
+.footer-top-custom {
+    border-top: 1px solid var(--footer-accent)   
 }
