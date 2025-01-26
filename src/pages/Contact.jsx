@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Form() {
+    useEffect(() => {
+        document.title = "Contact Me - John Brunson's Portfolio";
+    }, []);
     const [fullName, setFullName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [userMessage, setUserMessage] = useState('');
@@ -19,9 +22,16 @@ export default function Form() {
             }
         } else if (name === 'emailAddress') {
             setEmailAddress(value);
+            // The regex below checks for: The email should not contain any spaces.
+            //The email should contain exactly one "@" symbol.
+            //The email should contain at least one "." after the "@" symbol.
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             if (!value) {
                 newErrors.emailAddress = 'Email address is required';
-            } else {
+            } else if (!emailPattern.test(value)) {
+                newErrors.emailAddress = 'Please check your input. The email address appears to be invalid.'
+            } 
+            {
                 delete newErrors.emailAddress;
             }
         } else if (name === 'userMessage') {
@@ -35,14 +45,22 @@ export default function Form() {
 
         setErrors(newErrors);
     };
+    
     const handleBlur = (e) => {
         const { name, value } = e.target;
         let newErrors = { ...errors };
 
         if (name === 'fullName' && !value) {
             newErrors.fullName = 'Full name is required';
-        } else if (name === 'emailAddress' && !value) {
-            newErrors.emailAddress = 'Email address is required';
+        } else if (name === 'emailAddress') {
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!value) {
+                newErrors.emailAddress = 'Email address is required';
+            } else if (!emailPattern.test(value)) {
+                newErrors.emailAddress = 'Please check your input. The email address appears to be invalid.';
+            } else {
+                delete newErrors.emailAddress;
+            }
         } else if (name === 'userMessage' && !value) {
             newErrors.userMessage = 'Message is required';
         }

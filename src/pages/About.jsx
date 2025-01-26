@@ -1,11 +1,15 @@
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 export default function About() {
+    useEffect(() => {
+        document.title = "About - John Brunson's Portfolio";
+    }, []);
     return (
         <div className="container">
-            <div className="row pt-5">
+            <div className="row pt-5 mb-5">
                 <div className="container col-md-4 body-main pt-5">
                     <img className="p-5-md" src="/assets/img/john-brunson-headshot.jpg" alt="A Picture of John Brunson" id="headshot" />
                     <div className="d-grid gap-2 col-6 mx-auto">
@@ -16,7 +20,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="container col-md-8 body-main pt-5" id="brand-statement">
-                    <h1 className="lora-header">Hi! Welcome to my portfolio!</h1>
+                    <h1 className="lora-header">Hi! Welcome to John Brunson's portfolio!</h1>
                     <ul id="social-links">
                         <li className="p-3">
                             <a href="https://github.com/JohnBrunson/" target="_blank">
