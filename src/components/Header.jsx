@@ -1,15 +1,17 @@
 // From the docs: https://docs.fontawesome.com/v5/web/use-with/react
 // This is written since I had already written a good deal of the page before and it was easier to carry over the existing code as opposed to rewriting the navigational elements wholesale. It could probably stand a rewrite to be a bit more "React-Like" but this will do for now.
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faHouse } from '@fortawesome/free-solid-svg-icons'
+// import { Link } from 'react-router-dom'
+import Nav from './Nav';
 // It may be possible to use something like the below here, but for now this is rendering.
 // const element = <FontAwesomeIcon icon={faHouse} />
 
-export default function Nav() {
+export default function Header() {
     return (
         <header>
-            <nav className="navbar sticky-top navbar-expand-md border-bottom-custom navbar-custom" data-bs-theme="dark">
+            <Nav />
+            {/* <nav className="navbar sticky-top navbar-expand-md border-bottom-custom navbar-custom" data-bs-theme="dark">
                 <div className="container-fluid">
                     <Link className="navbar-brand nav-item raleway-nav" to="/">
                         <FontAwesomeIcon icon={faHouse} id="home-icon" />About Me
@@ -31,7 +33,7 @@ export default function Nav() {
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav> */}
         </header>
     );
 }
