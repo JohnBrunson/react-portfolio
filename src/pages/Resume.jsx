@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Resume() {
+  useEffect(() => {
+    document.title = "Resume - John Brunson's Portfolio";
+}, []);
   const [fileName, setFileName] = useState('JohnBrunsonResume.pdf'); // What file name should this save with?
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -24,6 +27,7 @@ export default function Resume() {
               <li className="raleway-body">SQL</li>
               <li className="raleway-body">React</li>
               <li className="raleway-body">NodeJS</li>
+              <li className="raleway-body">Python</li>
             </ul>
           </div>
         </div>
