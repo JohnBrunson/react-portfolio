@@ -22,9 +22,10 @@ export default function Nav() {
                         <li className="nav-item px-2 raleway-nav">
                             <Link className="nav-link" to="/Resume">Resume</Link>
                         </li>
-                        <li className="nav-item px-2 raleway-nav">
+                        {/* Commenting out contact form as it is not ready yet 8/23/2025 */}
+                        {/* <li className="nav-item px-2 raleway-nav">
                             <Link className="nav-link" to="/Contact">Contact John Brunson</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
