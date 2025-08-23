@@ -12,12 +12,13 @@ export default function About() {
             <div className="row pt-5 mb-5">
                 <div className="container col-md-4 body-main pt-5">
                     <img className="p-5-md" src="/assets/img/john-brunson-headshot.jpg" alt="A Picture of John Brunson" id="headshot" />
-                    <div className="d-grid gap-2 col-6 mx-auto">
+                    {/* 8/23/2025: Commenting out contact button as it is not ready */}
+                    {/* <div className="d-grid gap-2 col-6 mx-auto">
                         <Link to="/Contact">
                             <button type="button" className="btn btn-outline-primary">Contact Me!</button>
                         </Link>
 
-                    </div>
+                    </div> */}
                 </div>
                 <div className="container col-md-8 body-main pt-5" id="brand-statement">
                     <h1 className="lora-header">Hi! Welcome to John Brunson's portfolio!</h1>
