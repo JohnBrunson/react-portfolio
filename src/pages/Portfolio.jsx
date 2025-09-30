@@ -41,7 +41,20 @@ const Portfolio = () => {
             image: '/assets/img/python-hangman-screenshot.png',
             deployedVideo: 'https://drive.google.com/file/d/1sPb8uwVSD87AeKi8jH7eHi0Elkhq8qVh/view?usp=sharing',
             repoLink: 'https://github.com/JohnBrunson/python-hangman'
+        },
+        {
+            title: 'Dinner and a Movie',
+            image: '/assets/img/dinner-and-movie.png',
+            deployedLink: 'https://dinner-and-movie.onrender.com',
+            repoLink: 'https://github.com/JohnBrunson/dinner-and-movie'
+        },
+         {
+            title: 'Habit-tool',
+            image: '/assets/img/habit-tool.png',
+            deployedLink: 'https://habit-tool-epa6.onrender.com',
+            repoLink: 'https://github.com/JohnBrunson/habit-tool'
         }
+        
         // Add more projects as needed
     ];
 
